@@ -1,5 +1,8 @@
 # RANCANGAN ALGORITMA GENETIKA (GA) – CASE BASED SEARCHING
 **Mata Kuliah:** Kecerdasan Buatan (RPL) – Semester Genap 2025/2026
+**Anggota Kelompok:**
+1. **Farhan Kurniawan**
+2. **Ammar Dzaki**
 
 > **Tips Membaca File Ini di Editor:**
 > Tekan **`Ctrl + Shift + V`** (atau klik ikon kaca pembesar di pojok kanan atas tab) untuk membuka tampilan **Markdown Preview**, atau baca langsung di bawah karena tabel dan diagram sudah dirapikan.
@@ -240,3 +243,15 @@ Perulangan evolusi berhenti jika **salah satu** syarat berikut terpenuhi:
 
 **Kesimpulan untuk Presentasi ("Pendapat terhadap Hasil"):**
 Dari kelima percobaan di atas, program GA selalu berhasil menemukan pasangan `(x1, x2)` yang jumlahnya mendekati `pi/2 + k*pi` (`-1.5708`, `+1.5708`, `10.9956`, atau `17.2788`). Ini membuktikan bahwa algoritma bekerja dengan tepat menuju lokasi asimtot fungsi `tan(x1 + x2)` tempat nilai `f(x1, x2)` paling minimum.
+
+---
+
+## 7. PEMBAGIAN PERAN ANGGOTA KELOMPOK (50% : 50%)
+
+Bagian ini wajib dicantumkan di dalam **Laporan Tugas (.PDF)** sesuai aturan penilaian.
+
+| Nama Anggota     | Tanggung Jawab Kode Program (Python)                                                                 | Tanggung Jawab Laporan (.PDF) & Slide Presentasi                                                                                      |
+|------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| Farhan Kurniawan | 1. Definisi parameter & fungsi objektif `f(x1, x2)`<br>2. Inisialisasi populasi (`inisialisasi_populasi`)<br>3. Dekode kromosom biner ke riil (`dekode_kromosom`)<br>4. Perhitungan fitness (`hitung_fitness`)<br>5. Pemilihan orang tua Tournament Selection (`pilih_orangtua`) | 1. Bab Deskripsi Masalah & analisis matematis fungsi<br>2. Analisis ukuran populasi, rancangan kromosom 36 bit, dan cara decode<br>3. Analisis fungsi fitness & pemilihan orang tua<br>4. Presentasi bagian 1 (masalah, kromosom, decode, fitness, seleksi) |
+| Ammar Dzaki      | 1. Pindah silang Single-Point (`pindah_silang`)<br>2. Mutasi Bit-Flip (`mutasi`)<br>3. Pergantian generasi + Elitisme (`pergantian_generasi`)<br>4. Loop utama evolusi, kriteria berhenti, & tampilan output (`main`) | 1. Analisis metode operasi genetik (crossover & mutasi) serta nilai `Pc` dan `Pm`<br>2. Analisis pergantian generasi (survivor) & kriteria penghentian loop<br>3. Pengujian program, screenshot output, & pendapat hasil<br>4. Presentasi bagian 2 (crossover, mutasi, generasi, hasil & kesimpulan) |
+
