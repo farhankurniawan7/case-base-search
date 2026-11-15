@@ -139,7 +139,7 @@ def pilih_orangtua(populasi, daftar_fitness, ukuran_turnamen):
 #   4. Loop Utama Evolusi, Kriteria Penghentian (Terminasi), & Output Program
 # ==============================================================================
 
-# --- 2.1 PROSES 5: CROSSOVER / REKOMBINASI SATU TITIK (Slide 39-40) ---
+# --- 2.1 PROSES 5: CROSSOVER / REKOMBINASI SATU TITIK
 def pindah_silang(orangtua_1, orangtua_2, prob_crossover):
     # Menghitung panjang kromosom dari orangtua (36 bit)
     panjang = len(orangtua_1)
@@ -162,7 +162,7 @@ def pindah_silang(orangtua_1, orangtua_2, prob_crossover):
     return anak_1, anak_2
 
 
-# --- 2.2 PROSES 6: MUTASI REPRESENTASI BINER (Slide 56) ---
+# --- 2.2 PROSES 6: MUTASI REPRESENTASI BINER 
 def mutasi(kromosom, prob_mutasi):
     # Membuat salinan kromosom agar proses mutasi aman dilakukan per bit
     kromosom_mutasi = kromosom[:]
